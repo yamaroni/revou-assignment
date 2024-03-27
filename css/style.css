@@ -1,0 +1,105 @@
+/* Navigation Style */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+}
+
+hr {
+    margin: 0px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-image: url('../assets/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-container>button {
+    height: 25px;
+    margin: 4px;
+}
+
+/* Main Style */
+.section-container {
+    padding: 16px;
+}
+
+/* Main Header Style */
+.section-container>header {
+    text-align: center;
+}
+
+.subtitle {
+    color: gray;
+}
+
+/* Main Content Style */
+.section-content-container {
+    margin-top: 32px;
+    gap: 32px;
+    display: flex;
+}
+
+.banner-section,
+.form-section {
+    height: 300px;
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.banner-section {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.banner-section>img {
+    height: 200px;
+}
+
+.banner-caption {
+    padding-top: 16px;
+}
+
+.banner-caption>cite {
+    font-size: 14px;
+}
+
+.form-section {
+    background-color: aliceblue;
+}
+
+.form-section>input {
+    width: 50%;
+    height: 20px;
+}
+
+.form-item {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+button {
+    height: 24px;
+    width: 64px;
+    color: white;
+    background-color: black;
+    border: 0px;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .header-container,
+    .section-content-container {
+        flex-direction: column;
+    }
+}
