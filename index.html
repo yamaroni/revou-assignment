@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment - Yama</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <header class="header-container">
+        <section class="logo-icon"></section>
+        <section class="nav-container">
+            <button>Home</button>
+            <button>Our Pages</button>
+            <button>Call Us</button>
+        </section>
+    </header>
+    <hr />
 
+    <section class="section-container">
+        <header>
+            <h1>Yama Agency</h1>
+            <h3 class="subtitle">Your Happines is Our Happines</h3>
+        </header>
+
+        <div class="section-content-container">
+            <!-- Autoslide Banner -->
+            <div class="banner-section">
+                <img class="banner-img" src="assets/1.jpg" />
+                <img class="banner-img" src="assets/2.jpg" />
+                <img class="banner-img" src="assets/3.png" />
+
+                <div class="banner-caption">
+                    <cite>"Your Happines is Our Happines"</cite>
+                </div>
+
+                <button onclick="nextSlide(1)">Next Slide</button>
+            </div>
+            <!-- Contact Us Form -->
+            <form class="form-section" name="contact-form">
+                <h1>Contact Us</h1>
+                <label>Your Name:</label><br />
+                <input type="text" class="form-item" name="user-name" required /><br />
+                <button type="button" id="send-button">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
